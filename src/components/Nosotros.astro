@@ -1,0 +1,60 @@
+---
+import nosotrosPizza1 from '../images/nosotros_pizza_1.jpg';
+import nosotrosPizza2 from '../images/nosotros_pizza_2.jpg'
+---
+
+<section class="bg-amber-50 py-28 px-6" id="nosotros">
+    <div class="grid gap-12 items-center max-w-7xl w-full m-auto grid-cols-1 lg:grid-cols-2 lg:gap-28">
+        <div id="reveal" class="relative max-w-[500px] mx-auto lg:max-w-max opacity-0 translate-y-[30px] transition-[opacity_0.6s_ease,transform_0.6s_ease]">
+            <div class="w-4/5 aspect-4/5 rounded-[20px] overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.12)]">
+                <img src={nosotrosPizza1.src} alt="Una pizza" class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-105">
+            </div>
+            <div class="absolute -bottom-8 right-0 w-2/4 aspect-square border-4 border-solid border-white rounded-2xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.12)]">
+                <img src={nosotrosPizza2.src} alt="Otra pizza" class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-105">
+            </div>
+            <div class="absolute top-8 right-8 bg-amber-700 text-white w-28 h-28 rounded-full flex flex-col items-center justify-center text-center">
+                <strong class="text-3xl">25</strong>
+                <span class="text-sm">Años de <br>experiencia</span>
+            </div>
+        </div>
+        <div id="reveal" class="opacity-0 translate-y-[30px] transition-[opacity_0.6s_ease,transform_0.6s_ease]">
+            <span class="inline-block text-[0.85rem] font-semibold uppercase tracking-[2px] text-amber-700 mb-3">Nuestra historia</span>
+            <h2 class="font-[Cookie] text-5xl font-bold mb-4">Pasion italiana en cada rebanada</h2>
+            <p class="text-gray-600 mb-8 leading-[1.8]">
+                En <strong>Casa Napoli</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet doloremque magni quidem dolor odit laboriosam sapiente dignissimos! Tenetur fugiat maxime accusamus, deserunt saepe tempora 
+            </p>
+            <ul class="flex flex-col gap-5">
+                <li class="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.8)] transition-all duration-300 ease-in-out hover:translate-x-[8px]">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+                        </svg>                                             
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Horno de leña</h4>
+                        <p class="text-gray-600">Cocción perfecta en 90 segundos</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.8)] transition-all duration-300 ease-in-out hover:translate-x-[8px]">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-broccoli-icon lucide-broccoli"><path d="M10 13a3 3 0 0 1-2.121-5.121"/><path d="M15.606 14.204c-3.5 1.5-5.899 4.503-8.899 7.503A1 1 0 0 1 6 22c-2 0-4-2-4-4a1 1 0 0 1 .293-.707c1.911-1.911 3.823-3.578 5.347-5.441"/><path d="M16.573 14.737A4 4 0 0 1 14 11"/><path d="M7.14 10.907a4 4 0 1 1 2.756-7.43A4 4 0 0 1 16.7 4.48a2 2 0 0 1 2.82 2.82 4 4 0 0 1 1.002 6.805A4 4 0 1 1 13 16"/></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Ingredientes frescos</h4>
+                        <p class="text-gray-600">Seleccionados diariamente</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.8)] transition-all duration-300 ease-in-out hover:translate-x-[8px]">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-timer-icon lucide-timer"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>                     
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Masa Artesanal</h4>
+                        <p class="text-gray-600">Fermentacion de 48 horas</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

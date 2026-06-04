@@ -1,0 +1,41 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+---
+
+<section class="relative h-dvh sm:h-screen overflow-hidden" id="inicio">
+    <div class="absolute bg-[url(../images/fondo_pizza_1.jpg)] animate-hero-zoom inset-0 bg-cover bg-center bg-no-repeat"></div>
+    <div class="absolute w-full bg-black/40 inset-0 flex flex-col justify-center items-center text-center gap-10 text-white">
+        <div class="flex gap-8 flex-col my-auto mx-3">
+            <span class="bg-white/10 backdrop-blur-lg px-4 py-2 rounded-3xl border-white border font-bold w-fit m-auto mt-20">Desde 1998 · Horno de leña</span>
+            <h1 class="text-[clamp(2.5rem,6vw,4.5rem)] font-bold font-[Georgia] leading-[1.15]">
+                El sabor auténtico
+                <br>
+                <span class="text-amber-300">de la pizza italiana</span>
+            </h1>
+            <p class="text-[clamp(1rem,2vw,1.2rem)] max-w-160 leading-[1.7]">Masa fermentada 48 horas, ingredientes importados de Italia y recetas transmitidas por generaciones. Cada pizza es una obra de arte.</p>
+            <div class="flex flex-col gap-4 my-auto mb-10  sm:flex-row sm:mx-auto">
+                <a href="#menu" class="font-bold bg-amber-700 px-5 py-3 rounded-3xl transition-all duration-300 ease-in-out hover:bg-amber-800 hover:-translate-y-0.5 w-full sm:w-auto">Ver menú</a>
+                <a href="#contacto" class="font-bold px-4 py-2 rounded-3xl border-2 border-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black w-full sm:w-auto">Pedir ahora</a>
+            </div>
+            <div class="gap-7 text-lg m-auto hidden sm:flex">
+                <div>
+                    <strong class="text-amber-300">25+</strong><br>
+                    <span>Años de tradición</span>
+                </div>
+                <div>
+                    <strong class="text-amber-300">15</strong><br>
+                    <span>Variedades</span>
+                </div>
+                <div>
+                    <strong class="text-amber-300">4.9★</strong><br>
+                    <span>Valoración</span>
+                </div>
+            </div>
+        </div>
+        <div class="animate-[bounce_2s_ease_infinite]">
+            <span class="uppercase">Descubre más</span>
+            <div class="w-0.5 h-10 bg-linear-to-b from-white/60 to-transparent m-auto"></div>
+        </div>
+    </div>
+</section>

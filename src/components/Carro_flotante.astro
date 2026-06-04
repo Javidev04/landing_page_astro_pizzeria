@@ -1,0 +1,22 @@
+<div class="fixed bottom-6 right-6 z-900 md:right-8 md:bottom-8">
+    <button id="cart-toggle" class="cursor-pointer border-0 w-16 h-16 rounded-full bg-red-600 text-white flex items-center justify-center shadow-[0_16px_48px_rgba(0,0,0,0.16)] duration-300 ease-in-out relative hover:bg-red-700">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        <span id="cart-count" class="absolute -top-1 -right-1 w-6 h-6 bg-orange-400 text-black rounded-full text-sm font-bold flex justify-center items-center">0</span>
+    </button>
+    <div id="cart-panel" class="absolute bottom-[75px] -right-2 w-[calc(100vw-3rem)] bg-white rounded-2xl shadow-[0_16px_48px_rgba(0,0,0,0.16)] transition-transform duration-300 ease-in-out transform scale-90 translate-y-[10px] overflow-hidden md:w-[340px] md:right-0 opacity-0 invisible">
+        <div class="flex items-center justify-between py-5 px-6 border-b-[1px_solid_var(#f3f4f6)]">
+            <h3>Tu pedido</h3>
+            <button id="cart-close" class="cursor-pointer text-[1.5rem] text-[#6b7280] transition-transform duration-300 ease-in-out">x</button>
+        </div>
+        <ul id="cart-items" class="max-h-[260px] overflow-y-auto py-4 px-6">
+            <li class="text-center text-[#6b7280] py-8">No hay items en tu pedido</li>
+        </ul>
+        <div class="py-5 px-6 border-t-[1px_solid_#f3f4f6]">
+            <div class="flex justify-between items-center mb-4 text-[1.1rem]">
+                <span>Total</span>
+                <strong id="cart-total">S/0.00</strong>
+            </div>
+            <button id="cart-checkout" class="inline-flex items-center justify-center gap-2 py-3.5 px-7 text-[0.95rem] font-semibold rounded-3xl bg-red-500 text-white w-full border-[2px_solid_transparent] cursor-pointer duration-300 ease-in-out hover:bg-red-700">Realizar pedido</button>
+        </div>
+    </div>
+</div>

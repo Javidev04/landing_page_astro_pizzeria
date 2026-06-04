@@ -1,0 +1,109 @@
+---
+    import pizza_margarita from '../images/menu_margarita.jpg'
+    import pizza_pepperoni from '../images/menu_pepperoni.jpg'
+    import pizza_prosciutto_e_rucola from '../images/menu_prosciutto_e_rucola.webp'
+    import pizza_quattro_formaggi from '../images/menu_quattro_formaggi.jpg'
+    import pizza_vegetariana from '../images/menu_vegetariana.jpg'
+    import pizza_diavola from '../images/menu_diavola.jpg'
+---
+<section class="bg-black text-white py-24" id="menu">
+    <div class="w-full max-w-7xl mx-auto">
+        <div class="text-center mb-14 opacity-0 translate-y-[30px] transition-[opacity_0.6s_ease,transform_0.6s_ease]" id="reveal">
+            <span class="text-amber-600 inline-block text-[0.85rem] font-semibold uppercase tracking-[2px] mb-3">Nuestro menú</span>
+            <h2 class="font-[Cookie] text-5xl font-bold mb-4 leading-[1.2]">Pizzas que enamoran</h2>
+            <p class="text-gray-300 text-[1.1rem] max-w-[560px] mx-auto px-7">Elaboradas con amor y los mejores ingredientes de la región</p>
+        </div>
+        <div class="flex justify-center gap-3 flex-wrap  mb-12 opacity-0 translate-y-[30px] transition-[opacity_0.6s_ease,transform_0.6s_ease]" id="reveal">
+            <button id="menuFilter" class="py-[0.6rem] px-6 rounded-4xl text-[0.9rem] font-medium border border-solid border-gray-500 duration-300 ease-in-out bg-amber-800 cursor-pointer" data-filter="all">Todas</button>
+            <button id="menuFilter" class="py-[0.6rem] px-6 rounded-4xl text-[0.9rem] font-medium border border-solid border-gray-500 duration-300 ease-in-out hover:bg-amber-800 cursor-pointer" data-filter="clasicas">Clásicas</button>
+            <button id="menuFilter" class="py-[0.6rem] px-6 rounded-4xl text-[0.9rem] font-medium border border-solid border-gray-500 duration-300 ease-in-out hover:bg-amber-800 cursor-pointer" data-filter="especiales">Especiales</button>
+            <button id="menuFilter" class="py-[0.6rem] px-6 rounded-4xl text-[0.9rem] font-medium border border-solid border-gray-500 duration-300 ease-in-out hover:bg-amber-800 cursor-pointer" data-filter="vegetarianas">Vegetarianas</button>
+        </div>
+        <div class="grid gap-8 grid-cols-[repeat(auto-fill,minmax(320px,1fr))] mx-7 lg:mx-0">
+            <article id="reveal" data-category="clasicas" class="bg-gray-800 menuCard rounded-3xl overflow-hidden opacity-0 translate-y-[30px] transition-[opacity_0.6s_ease,transform_0.6s_ease]">
+                <div class="relative aspect-16/10 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105" src={pizza_margarita.src} alt="">
+                    <span class="absolute top-4 left-4 py-1.5 px-3.5 bg-amber-700 text-sm font-semibold rounded-2xl uppercase tracking-[0.5px]">Popular</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-[Cookie] text-2xl mb-2">Margarita</h3>
+                    <p class="text-gray-300 text-sm mb-5 leading-[1.6]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae voluptates suscipit, inventore, blanditiis</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-[Georgia] text-2xl font-bold text-amber-500">S/19.99</span>
+                        <button data-name="Margarita" data-price="19.99" class="add-to-cart inline-flex items-center justify-center gap-2 font-semibold rounded-2xl py-2 px-5 bg-amber-800 duration-300 ease-in-out cursor-pointer hover:bg-amber-900 hover:-translate-y-0.5">Agregar</button>
+                    </div>
+                </div>
+            </article>
+            <article id="reveal" data-category="clasicas" class="bg-gray-800 menuCard rounded-3xl overflow-hidden opacity-0 translate-y-[30px] transition-[opacity_0.6s_ease,transform_0.6s_ease]">
+                <div class="relative aspect-16/10 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105" src={pizza_pepperoni.src} alt="">
+                    
+                </div>
+                <div class="p-6">
+                    <h3 class="font-[Cookie] text-2xl mb-2">Pepperoni</h3>
+                    <p class="text-gray-300 text-sm mb-5 leading-[1.6]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae voluptates suscipit, inventore, blanditiis</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-[Georgia] text-2xl font-bold text-amber-500">S/19.99</span>
+                        <button data-name="Pepperoni" data-price="19.99" class="add-to-cart inline-flex items-center justify-center gap-2 font-semibold rounded-2xl py-2 px-5 bg-amber-800 duration-300 ease-in-out cursor-pointer hover:bg-amber-900 hover:-translate-y-0.5">Agregar</button>
+                    </div>
+                </div>
+            </article>
+            <article id="reveal" data-category="clasicas" class="bg-gray-800 menuCard rounded-3xl overflow-hidden opacity-0 translate-y-[30px] transition-[opacity_0.6s_ease,transform_0.6s_ease]">
+                <div class="relative aspect-16/10 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105" src={pizza_diavola.src} alt="">
+                    
+                </div>
+                <div class="p-6">
+                    <h3 class="font-[Cookie] text-2xl mb-2">Diavola</h3>
+                    <p class="text-gray-300 text-sm mb-5 leading-[1.6]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae voluptates suscipit, inventore, blanditiis</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-[Georgia] text-2xl font-bold text-amber-500">S/19.99</span>
+                        <button data-name="Diavola" data-price="19.99" class="add-to-cart inline-flex items-center justify-center gap-2 font-semibold rounded-2xl py-2 px-5 bg-amber-800 duration-300 ease-in-out cursor-pointer hover:bg-amber-900 hover:-translate-y-0.5">Agregar</button>
+                    </div>
+                </div>
+            </article>
+            <article id="reveal" data-category="especiales" class="bg-gray-800 menuCard rounded-3xl overflow-hidden opacity-0 translate-y-[30px] transition-[opacity_0.6s_ease,transform_0.6s_ease]">
+                <div class="relative aspect-16/10 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105" src={pizza_prosciutto_e_rucola.src} alt="">
+                    
+                </div>
+                <div class="p-6">
+                    <h3 class="font-[Cookie] text-2xl mb-2">Prosciutto e rucola</h3>
+                    <p class="text-gray-300 text-sm mb-5 leading-[1.6]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae voluptates suscipit, inventore, blanditiis</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-[Georgia] text-2xl font-bold text-amber-500">S/19.99</span>
+                        <button data-name="Prosciutto e rucola" data-price="19.99" class="add-to-cart inline-flex items-center justify-center gap-2 font-semibold rounded-2xl py-2 px-5 bg-amber-800 duration-300 ease-in-out cursor-pointer hover:bg-amber-900 hover:-translate-y-0.5">Agregar</button>
+                    </div>
+                </div>
+            </article>
+            <article id="reveal" data-category="especiales" class="bg-gray-800 menuCard rounded-3xl overflow-hidden opacity-0 translate-y-[30px] transition-[opacity_0.6s_ease,transform_0.6s_ease]">
+                <div class="relative aspect-16/10 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105" src={pizza_quattro_formaggi.src} alt="">
+                    <span class="absolute top-4 left-4 py-1.5 px-3.5 bg-amber-500 text-black text-sm font-semibold rounded-2xl uppercase tracking-[0.5px]">Del chef</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-[Cookie] text-2xl mb-2">Quattro formaggi</h3>
+                    <p class="text-gray-300 text-sm mb-5 leading-[1.6]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae voluptates suscipit, inventore, blanditiis</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-[Georgia] text-2xl font-bold text-amber-500">S/19.99</span>
+                        <button data-name="Quattro formaggi" data-price="19.99" class="add-to-cart inline-flex items-center justify-center gap-2 font-semibold rounded-2xl py-2 px-5 bg-amber-800 duration-300 ease-in-out cursor-pointer hover:bg-amber-900 hover:-translate-y-0.5">Agregar</button>
+                    </div>
+                </div>
+            </article>
+            <article id="reveal" data-category="vegetarianas" class="bg-gray-800 menuCard rounded-3xl overflow-hidden opacity-0 translate-y-[30px] transition-[opacity_0.6s_ease,transform_0.6s_ease]">
+                <div class="relative aspect-16/10 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105" src={pizza_vegetariana.src} alt="">
+                    
+                </div>
+                <div class="p-6">
+                    <h3 class="font-[Cookie] text-2xl mb-2">Verdura fresca</h3>
+                    <p class="text-gray-300 text-sm mb-5 leading-[1.6]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae voluptates suscipit, inventore, blanditiis</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-[Georgia] text-2xl font-bold text-amber-500">S/19.99</span>
+                        <button data-name="Verdura fresca" data-price="19.99" class="add-to-cart inline-flex items-center justify-center gap-2 font-semibold rounded-2xl py-2 px-5 bg-amber-800 duration-300 ease-in-out cursor-pointer hover:bg-amber-900 hover:-translate-y-0.5">Agregar</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
